@@ -1,0 +1,15 @@
+"""
+config.py
+Environment-driven configuration. Values come from a .env file locally
+(via python-dotenv) or from real environment variables in production
+(e.g. Render's dashboard env vars).
+"""
+
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
