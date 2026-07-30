@@ -1,5 +1,6 @@
 fastapi==0.115.0
-uvicorn[standard]==0.30.6
+uvicorn==0.30.6
+httptools==0.6.1
 openai==1.51.0
 httpx<0.28
 python-dotenv==1.0.1
